@@ -1,0 +1,343 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: #fff;
+  color: #222;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 32px 16px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 48px;
+  position: relative;
+  background: linear-gradient(120deg, #f4f8fb 0%, #eaf6ff 100%);
+  box-shadow: 0 2px 16px rgba(0,116,217,0.04);
+  border-radius: 18px;
+}
+
+.profile-pic {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #0074d9;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  transition: transform 0.3s;
+}
+.profile-pic:hover {
+  transform: scale(1.06) rotate(-2deg);
+}
+
+h1 {
+  font-size: 2.3rem;
+  margin: 0 0 10px 0;
+  font-weight: 700;
+}
+
+.highlight {
+  color: #0074d9;
+}
+
+.tagline {
+  font-size: 1.15rem;
+  color: #555;
+  margin-bottom: 0;
+}
+
+.hero-social {
+  margin-top: 18px;
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.social-link {
+  color: #0074d9;
+  background: #f4f8fb;
+  padding: 7px 18px;
+  border-radius: 22px;
+  font-size: 1.05rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+.social-link:hover {
+  background: #0074d9;
+  color: #fff;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+}
+
+section {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  margin-bottom: 36px;
+  padding: 28px 22px;
+}
+
+h2 {
+  font-size: 1.3rem;
+  color: #0074d9;
+  margin-top: 0;
+}
+
+.skills {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 18px 0 0 0;
+}
+
+.skills li {
+  background: #f4f8fb;
+  color: #0074d9;
+  padding: 7px 16px;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+  cursor: pointer;
+}
+.skills li:hover {
+  background: #0074d9;
+  color: #fff;
+  transform: translateY(-3px) scale(1.05);
+}
+
+.cool-stuff {
+  margin-top: 18px;
+  display: flex;
+  gap: 18px;
+  font-size: 1.1rem;
+  color: #222;
+  flex-wrap: wrap;
+}
+
+.about-extra {
+  margin-top: 18px;
+  color: #0074d9;
+  font-size: 1.05rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.about-extra i {
+  margin-right: 7px;
+}
+
+.featured {
+  background: #f4f8fb;
+  border: 1.5px solid #e0eaf3;
+  box-shadow: 0 2px 12px rgba(0,116,217,0.07);
+  border-radius: 16px;
+  padding: 32px 18px;
+}
+.featured-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 16px;
+}
+.featured-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+  padding: 14px 16px;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.featured-item:hover {
+  box-shadow: 0 4px 18px rgba(0,116,217,0.10);
+  transform: translateY(-2px) scale(1.02);
+}
+.featured-item i {
+  font-size: 1.7rem;
+  color: #0074d9;
+  margin-top: 2px;
+}
+.featured-link {
+  color: #00c3e3;
+  font-size: 0.98rem;
+}
+
+.cta {
+  text-align: center;
+  background: linear-gradient(90deg, #0074d9 0%, #00c3e3 100%);
+  color: #fff;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.cta-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 14px 38px;
+  background: #fff;
+  color: #0074d9;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+  cursor: pointer;
+}
+.cta-btn:hover, .insta-btn:hover {
+  background: #0074d9;
+  color: #fff;
+  transform: scale(1.05);
+}
+.insta-btn i {
+  margin-right: 7px;
+}
+
+footer {
+  background: #f4f8fb;
+  padding: 18px 0 10px 0;
+  text-align: center;
+  font-size: 1rem;
+  color: #0074d9;
+  border-top: 1px solid #e0eaf3;
+  margin-top: 32px;
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.footer-social a {
+  color: #0074d9;
+  margin: 0 7px;
+  font-size: 1.2rem;
+  transition: color 0.2s;
+}
+.footer-social a:hover {
+  color: #00c3e3;
+}
+
+.featured-on {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f4f8fb;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  margin-bottom: 32px;
+  padding: 22px 10px 18px 10px;
+  border: 1.5px solid #e0eaf3;
+  animation: fadeIn 1.2s;
+}
+.featured-on h2 {
+  color: #0074d9;
+  font-size: 1.15rem;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+.taxguru-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  background: #fff;
+  border-radius: 10px;
+  padding: 8px 18px 8px 10px;
+  box-shadow: 0 1px 8px rgba(0,116,217,0.07);
+  border: 1px solid #e0eaf3;
+  transition: box-shadow 0.2s, transform 0.2s, background 0.2s;
+  font-weight: 600;
+  color: #0074d9;
+  font-size: 1.08rem;
+}
+.taxguru-link:hover {
+  background: #0074d9;
+  color: #fff;
+  box-shadow: 0 4px 18px rgba(0,116,217,0.13);
+  transform: scale(1.04) translateY(-2px);
+}
+.taxguru-logo {
+  height: 32px;
+  width: auto;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  padding: 2px 4px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 8px 1vw;
+  }
+  section {
+    padding: 14px 4px;
+  }
+  .profile-pic {
+    width: 80px;
+    height: 80px;
+  }
+  h1 {
+    font-size: 1.2rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  .skills li {
+    font-size: 0.93rem;
+    padding: 5px 8px;
+  }
+  .cta-btn {
+    padding: 10px 12px;
+    font-size: 0.98rem;
+  }
+  .featured-list {
+    gap: 10px;
+  }
+  .featured-item {
+    padding: 8px 6px;
+    font-size: 0.97rem;
+  }
+  .about-extra {
+    font-size: 0.97rem;
+  }
+  .featured-on {
+    padding: 12px 2px 10px 2px;
+  }
+  .taxguru-logo {
+    height: 22px;
+  }
+  .taxguru-link {
+    font-size: 0.97rem;
+    padding: 6px 8px 6px 4px;
+  }
+  .featured {
+    padding: 16px 4px;
+  }
+} 
